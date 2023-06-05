@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    height: 96px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 96px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 56px;
+}
+
+
+.titulo h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #64748B;
+    text-transform: uppercase;
+}
+
+.titulo small {
+    display: block;
+    text-align: right;
+    color: #0F172A;
+    font-size: 16px;
+}
+
+main {
+    margin: 48px 0;
+}
+
+.wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main .wrap h2 {
+    font-size: 24px;
+    color: #64748B;
+
+}
+
+.contenedor-obras {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    margin: 40px 0;
+}
+
+.obra img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+    transform: rotate(2deg);
+    transition: all 0.3s ease;
+}
+
+.obra img:hover {
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.info-obra {
+    margin-top: 20px;
+
+}
+
+.info-obra h4 {
+    color: #64748B;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-obra p {
+    text-align: center;
+    color: #64748B;
+    font-size: 14px;
+    margin: 0;
+}
+
+.precio {
+    background-color: #64748B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.precio:hover {
+    background-color: #0F172A;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 50px;
+    background-color: #0F172A;
+}
+
+.wrap-footer {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap-footer img {
+    height: 56px;
+}
+
+.direccion {
+    color: #ffffff;
+}
+
+.direccion p {
+    text-align: right;
+    font-size: 14px;
+}
+
+.copy {
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+#form-subir-obra {
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#form-subir-obra h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #64748B;
+}
+
+#form-subir-obra label {
+    display: block;
+    margin-bottom: 10px;
+    color: #64748B;
+}
+
+#form-subir-obra input[type="text"],
+#form-subir-obra input[type="date"],
+#form-subir-obra input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+#form-subir-obra input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #007b9a;
+}
